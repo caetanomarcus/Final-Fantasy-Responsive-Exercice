@@ -1,0 +1,345 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+@font-face{
+    font-family:"Final Fantasy";
+    src: url(/assets/finalf.ttf);
+}
+body{
+    width: 98vw;
+    
+}
+
+.header-box-logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+.header-box-logo-img{
+    width: 14%;
+    height: 14%;
+    margin-left: 2rem;
+    padding: 5px;
+}
+h1{
+  text-transform: uppercase;
+  font-family: "Final Fantasy";
+  padding: 5px;
+  margin-right: 2rem;
+  font-size: 4rem;
+  
+}
+.header-menu{
+    margin: 2rem;
+}
+.header-menu ul{
+    display:flex;
+    list-style: none;
+    justify-content: center;
+    
+}
+.header-menu li a{
+    margin-left: 3rem;
+    padding: 2px;
+    padding-bottom: 0;
+    border: solid black 1px;
+    border-radius: 2px;
+    font-size: 1.3rem;
+    text-transform: capitalize;
+    color: blanchedalmond;
+    background-color: black;
+}
+.header-menu li :hover{
+    background-color: white;
+    color: black;
+    font-weight: 800;
+    border: solid black 2px;
+    border-radius: 1.5px;
+}
+a{
+    color: inherit;
+}
+.header-menu-mobile{
+    display: none;
+}
+.barra-menu{
+    border: black solid 2px;
+    border-width: 0px 1px 0px 0px ;
+    padding-left: 1rem;
+    padding-right: 2rem;
+}
+.barra-menu2{
+    border: black solid 2px;
+    border-width: 0px 0px 0px 1px ;
+}
+.main-container{
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+    
+}
+.main-container-box{
+    flex: 2;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    
+}
+.main-container-figures{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-right: 2rem;
+}
+.article{
+    display:flex;
+    flex-direction: column;
+    flex-basis: auto;
+    flex: 1;
+}
+.first-article{
+    display:flex;
+    flex-direction: column;
+    flex-basis: auto;
+    flex:1;
+}
+.article-body{
+    display:flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+.article-title{
+    text-align: center;
+    padding: 2rem;
+}
+.article-image-1{
+    width: 100%;
+    border-radius: 4px;
+}
+.article-content{
+    flex: 1;
+    line-height: 1.5rem;
+    width: 93%;
+}
+.side-img1{
+   width: 100%;
+   margin-bottom: 1rem;
+   
+   border-radius: 4px;
+}
+.news{
+    border: 2px black solid;
+    text-align: center;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-top: 4rem;
+    background-color: black;
+    border-radius: 5px;
+}
+.news-title{
+    color: blanchedalmond;
+    text-transform: capitalize;
+}
+.sobre-local{
+    display: flex;
+    margin-left: 2rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    margin-right: 2rem;
+}
+.about{
+    flex: 2;
+    border: black solid 2px;
+    border-width: 0px 1px 0px 1px ;
+    margin-right: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+h3{
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+}
+.local{
+    flex: 1;
+    border: black solid 2px;
+    border-width: 0px 1px 0px 0px ;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    margin-right: 2rem;
+}
+.final-paragraph{
+    line-height: 1.5rem;
+}
+.bottom-nav{
+    display: flex;
+    justify-content: space-around;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    padding-top: 1rem;
+    border: solid black;
+    border-width: 2px 0px 0px 0px;
+}
+.bottom-menu ul{
+    display:flex;
+    list-style: none;
+    justify-content: center;
+    flex-basis: auto;
+}
+.bottom-menu li{
+    margin-left: 3rem;
+    border: 2px solid black;
+    text-transform: capitalize;
+    padding: 1/2rem;
+    color: blanchedalmond;
+    background-color: black;
+    border-radius: 2px;
+}
+.bottom-menu li :hover{
+    background-color: white;
+    color: black;
+    font-weight: 600;
+    border-color: black;
+    border-radius: 1.5px;
+}
+
+.copyright{
+    flex-basis: auto;
+    font-size: 0.8rem;
+}
+
+@media (max-width:768px){
+    body{
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: white;
+        background-color: black;
+    }
+    header{
+        flex:1;
+    }
+    main{
+        flex:2;
+    }
+    .news{
+        background-color: white;
+    }
+    .news-title{
+        color: black;
+    }
+
+    .header-box-logo{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .header-box-logo-img{
+        width: 16%;
+        height: 16%;
+        margin-top: 1rem;
+    }
+    h1{
+        font-size: 2rem;
+        padding: 1rem;
+        margin: 0;
+    }
+    .header-menu{
+        display: none;
+    }
+    .main-container{
+       flex: 3;
+       margin-top: 1rem;
+    }
+    .sobre-local{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .about{
+        flex: 1;
+        border-width: 0px 0px 2px 0px ;
+        border-image: linear-gradient(70deg,white, gray, black) 1;
+        padding-bottom: 1rem;
+        margin: 0 1rem 0 1rem;
+    }
+    .local{
+        flex: 1;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        margin: 0 1rem 0 1rem;
+        border-width: 0px 0px 2px 0px ;
+        border-image: linear-gradient(70deg,black, gray, white) 1;
+    }
+   
+    .main-container-figures{
+        width: 100%;
+        display: none;
+        flex-direction: row;
+        order: 1;
+    }
+    .main-container-box{
+        flex: 1;
+        order: 2;
+        margin: 0;
+    }
+    .article-image-1{
+        width: 100%;
+    }
+    .side-img1{
+        width: 33.33%;
+        margin: 0;
+        padding: 0;
+        
+    }
+    .main-container{
+        padding: 1rem;
+    }
+    .bottom-nav{
+        border: none;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        align-items: center;
+    }
+    .bottom-menu{
+        display:none;
+    }
+    .header-menu-mobile{
+        display:inline-block;
+        margin: 0;
+    }
+    li ul {
+        display:none;
+        list-style: none;
+    }
+    li:hover ul {
+        display:block;
+    }
+    ul li {
+        width: 70px;
+        color:black;
+        padding: 2px;
+        background-color: white;
+        margin-top: 0;
+        margin: 1rem;
+        text-align: center;
+        border: 3px solid;
+        border-image: linear-gradient(70deg,black, gray, white) 1;
+        text-transform: capitalize;
+        
+    }
+    ul li ul li{
+        width: 100%;
+        margin:0;
+        
+    }
+    nav{
+        align-self: center;
+    }
+}
